@@ -22,8 +22,8 @@ const LoginPage = () => {
     if (user?.accessToken) navigate("/fleet");
   }, [user, navigate]);
 
-  const handleLogin = (e) => {
-    e.preventDefault();
+  const handleLogin = () => {
+    // e.preventDefault();
     dispatch(loginUser({
       email,
       password,
